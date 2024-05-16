@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- Top menu item -->
+  <menuitem name="Hotel System" id="menu_hotel_root" web_icon="hotel,static/description/icon.png"/>
+  
+  <!-- Submenu for Guest Registration -->
+  <menuitem 
+    name="Guest Registration" 
+    id="menu_hotel_guestregistration_list"
+    parent="menu_hotel_root"
+    sequence="10"/>
+
+  <!-- Menu item for Guest Registration List -->
+  <menuitem 
+    name="Guest Registration List" 
+    id="menu_hotel_guestregistration_list_action"
+    parent="menu_hotel_guestregistration_list"
+    action="action_hotel_guestregistration"
+    sequence="10"/>
+  
+  <!-- Master Lists submenu -->
+  <menuitem 
+    name="Master Lists" 
+    id="menu_hotel_masterlists" 
+    parent="menu_hotel_root"
+    sequence="20"/>
+</odoo>
